@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.gitignore",
     "\\blog",
-    "\\mysite"
+    "\\blog\\migrations",
+    "\\blog\\templates",
+    "\\blog\\templates\\blog",
+    "\\blog\\__pycache__",
+    "\\mysite",
+    "\\myvenv"
   ],
-  "SelectedNode": "\\blog\\admin.py",
+  "SelectedNode": "\\blog\\models.py",
   "PreviewInSolutionExplorer": false
 }
