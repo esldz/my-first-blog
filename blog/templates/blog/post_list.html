@@ -7,29 +7,14 @@
         <h1><a href="/">Bilisim Blog</a></h1>
     </div>
 
-    <div>
-        <p>publish:13.25 29.10.2022</p>
-        <h2><a href=" ">First Blog</a></h2>
-        <p>if-else Yapisi</p>
-    </div>
 
+    {% for post in posts %}
     <div>
-        <p>publish:13.30 29.10.2022</p>
-        <h2><a href=" ">else-if</a></h2>
-        <p>if-else-else if yapisi</p>
+        <p>Paylasim: {{post.published_date}}</p>
+        <h1><a href=" ">{{post.title}}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-
-    <div>
-        <p>publish:13.37 29.10.2022</p>
-        <h2><a href=" ">Arduino</a></h2>
-        <p>Led yakma</p>
-    </div>
-
-    <div>
-        <p>publish:13.25 29.10.2022</p>
-        <h2><a href=" ">Arduino-2</a></h2>
-        <p>trafik ledleri</p>
-    </div>
+    {% endfor %}
 
 </body>
 </html>
